@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(to right bottom,#b40eca,#ce7d03);
+}
+header {
+    background-color: #2c3e50; /*لون الخلفيه */
+    padding: 20px; /* هامش داخلي للهيدر */
+    text-align: center; /* محاذاة النص في المنتصف */
+    color: #ecf0f1; /* لون النص في الهيدر */
+    font-size: 1.5em; /* حجم الخط */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* نوع الخط */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ظل الهيدر */
+  }
+  
+  /* إذا كان لديك شعار (logo) داخل الهيدر  */
+  header img {
+    max-width: 10%; 
+    height: 10%;
+  }
+  
+  
+  header:hover {
+    background-color: #34495e; /* لون خلفية هيدر مع تأثير التحويل */
+    transition: background-color 0.3s ease-in-out;
+  }
+h1 {
+    color: #d7dee2; /* لون النص */
+    font-size: 2.5em; /* حجم الخط */
+    text-align: center; /* محاذاة النص في المنتصف */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    letter-spacing: 2px; /* تباعد بين الحروف */
+    margin-bottom: 20px; /* هامش في الأسفل */
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* ظل النص */
+  }
+  
+  h1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+#main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#addBtn{
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    color: azure;
+    background-color: #179712;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addBtn:hover{
+    background-color: #06a086;
+}
+
+.note{
+    
+    background-color: #393e46;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.note:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tool{
+    background-color: #222831;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tool i{
+
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover{
+    color: #aca1a1;
+}
+
+.note textarea {
+    width: 300px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
+
+.note textarea:focus {
+    outline: none;
+}
+<!--footer-->
+footer {
+    background-color: #147ce3; 
+    color: #ecf0f1; 
+    padding: 20px; 
+    text-align: center; 
+    position: fixed;
+    width: 100%; 
+    bottom: 0; 
+  }
+  
+  /* تعريف تأثير الإضاءة */
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  .signature:hover {
+    animation: glow 1s infinite; /* تكرار التأثير بلا نهاية */
+  }
+  
+  /* تنسيق توقيع النص */
+  .signature {
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Pacifico', cursive; /* استخدام خط Pacifico */
+    color: #edf0ed;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer; 
+  }
+  
+  
